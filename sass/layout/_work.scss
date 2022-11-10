@@ -1,11 +1,12 @@
 .work {
-    background-color: var(--white-logo-color);
+    background-color: getColor('white-logo-color');
+}
 
-    &__list {
-      display: flex;
-      gap: 30px;
-    }
-
+  .work-list {
+    @extend .list;
+    display: flex;
+    gap: 30px;
+      
     &__item {
       position: relative;
     }
@@ -17,6 +18,7 @@
       padding-top: 27px;
       padding-bottom: 27px;
       width: 100%;
+      pointer-events: none;
     }
 
     &__text {
@@ -26,6 +28,6 @@
       text-align: center;
       letter-spacing: 0.03em;
       text-transform: uppercase;
-      color: var(--white-logo-color)
+      color: getColor('white-logo-color');
     }
   }

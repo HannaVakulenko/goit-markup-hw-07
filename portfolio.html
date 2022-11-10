@@ -14,35 +14,35 @@
 <body>
     <header class="page-header">
         <div class="container page-header__nav">
-            <a href="/index.html" class="logo page-header__logo link">Web<span class="page-header__logo--dark">Studio</span></a>
-            <ul class="page-header__list list">
-                <li class="page-header__item"><a class="page-header__link link" href="./index.html">Студія</a></li>
-                <li class="page-header__item"><a class="page-header__link link current" href="./portfolio.html">Портфоліо</a></li>
-                <li class="page-header__item"><a class="page-header__link link" href="">Контакти</a></li>
+            <a href="/index.html" class="logo header-logo">Web<span class="logo--dark">Studio</span></a>
+            <ul class="menu page-nav">
+                <li class="menu__item"><a class="menu__link" href="./index.html">Студія</a></li>
+                <li class="menu__item"><a class="menu__link current" href="./portfolio.html">Портфоліо</a></li>
+                <li class="menu__item"><a class="menu__link" href="">Контакти</a></li>
             </ul>
-            <ul class="hdr-address list">
+            <ul class="hdr-address">
                 <li class="hdr-address__item">
-                    <a class="hdr-address__link link" href="mailto:info@devstudio.com"><svg class="hdr-address__icon" width="16" height="12">
+                    <a class="hdr-address__link" href="mailto:info@devstudio.com"><svg class="hdr-address__icon" width="16" height="12">
                         <use href="./img/icons.svg#icon-envelope_16_12-1"></use></svg>info@devstudio.com</a>
                 </li>
                 <li class="hdr-address__item">
-                    <a class="hdr-address__link link" href="tel:+380961111111"><svg class="hdr-address__icon" width="10" height="16">
+                    <a class="hdr-address__link" href="tel:+380961111111"><svg class="hdr-address__icon" width="10" height="16">
                         <use href="./img/icons.svg#icon-smartphone_10_16-1"></use></svg> +38 096 111 11 11</a>
                 </li>
             </ul>
         </div>
     </header>
     <main>
-        <section class="portfolio section">
+        <section class="portfolio">
             <div class="container">
                 <h2 class="portfolio__title visually-hidden">Портфоліо</h2>
-                <ul class="filters list">
+                <ul class="filters portfolio-filters">
                     <li class="filters__item">
                         <input
                         type="radio"
                         name="filter"
                         id="all"
-                        class="filter__check visually-hidden">
+                        class="filters__radio">
                       <label for="all" class="filters__text current-filter">Усі</label>
                     </li>
                     <li class="filters__item">
@@ -51,7 +51,7 @@
                             type="radio"
                             name="filter"
                             id="web-site"
-                            class="filter__check visually-hidden">
+                            class="filters__radio">
                           <label for="web-site" class="filters__text">Веб-сайти</label>
                     </li>
                     <li class="filters__item">
@@ -60,7 +60,7 @@
                             type="radio"
                             name="filter"
                             id="app"
-                            class="filter__check visually-hidden">
+                            class="filters__radio">
                           <label for="app" class="filters__text">Додатки</label>
                     </li>
                     <li class="filters__item">
@@ -69,7 +69,7 @@
                             type="radio"
                             name="filter"
                             id="design"
-                            class="filter__check visually-hidden">
+                            class="filters__radio">
                           <label for="design" class="filters__text">Дизайн</label>
                     </li>
                     <li class="filters__item">
@@ -78,92 +78,92 @@
                             type="radio"
                             name="filter"
                             id="marketing"
-                            class="filter__check visually-hidden">
+                            class="filters__radio">
                           <label for="marketing" class="filters__text">Маркетинг</label>
                     </li>
                 </ul>
-                <ul class="portfolio__grid list">
-                    <li class="portfolio__item">
+                <ul class="portfolio-grid">
+                    <li class="portfolio-grid__item">
                         <a class="link" href="">
-                            <div class="portfolio__overlay">
+                            <div class="portfolio-overlay">
                                 <img src="./img/proekt_1.jpg" alt="Веб-сайт Технокряк" width="370" height="294">
-                                <p class="portfolio__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                <p class="portfolio-overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
-                            <div class="portfolio__description">
-                                <h3 class="portfolio__title">Технокряк</h3>
-                                <p class="portfolio__text">Веб-сайт</p>
+                            <div class="portfolio-grid__description">
+                                <h3 class="portfolio-grid__title">Технокряк</h3>
+                                <p class="portfolio-grid__text">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__item">
+                    <li class="portfolio-grid__item">
                         <a class="link" href="">
                             <img src="./img/proekt_2.jpg" alt="Дизайн постеру Новий Орлеан з Золотою Зіркою" width="370" height="294">
-                            <div class="portfolio__description">
-                                <h3 class="portfolio__title">Постер <span lang="en">New Orlean vs Golden Star</span></h3>
-                                <p class="portfolio__text">Дизайн</p>
+                            <div class="portfolio-grid__description">
+                                <h3 class="portfolio-grid__title">Постер <span lang="en">New Orlean vs Golden Star</span></h3>
+                                <p class="portfolio-grid__text">Дизайн</p>
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__item">
+                    <li class="portfolio-grid__item">
                         <a class="link" href="">
                             <img src="./img/proekt_3.jpg" alt="Додаток Ресторану Морська їжа" width="370" height="294">
-                            <div class="portfolio__description">
-                                <h3 class="portfolio__title">Ресторан <span lang="en">Seafood</span></h3>
-                                <p class="portfolio__text">Додаток</p>
+                            <div class="portfolio-grid__description">
+                                <h3 class="portfolio-grid__title">Ресторан <span lang="en">Seafood</span></h3>
+                                <p class="portfolio-grid__text">Додаток</p>
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__item">
+                    <li class="portfolio-grid__item">
                         <a class="link" href="">
                             <img src="./img/proekt_4.jpg" alt="Маркетинг Проєкту Прайм" width="370" height="294">
-                            <div class="portfolio__description">
-                                <h3 class="portfolio__title">Проєкт <span lang="en">Prime</span></h3>
-                                <p class="portfolio__text">Маркетинг</p>
+                            <div class="portfolio-grid__description">
+                                <h3 class="portfolio-grid__title">Проєкт <span lang="en">Prime</span></h3>
+                                <p class="portfolio-grid__text">Маркетинг</p>
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__item">
+                    <li class="portfolio-grid__item">
                         <a class="link" href="">
                             <img src="./img/proekt_5.jpg" alt="Додаток Проєкту Коробки" width="370" height="294">
-                            <div class="portfolio__description">
-                                <h3 class="portfolio__title">Проєкт <span lang="en">Boxes</span></h3>
-                                <p class="portfolio__text">Додаток</p>
+                            <div class="portfolio-grid__description">
+                                <h3 class="portfolio-grid__title">Проєкт <span lang="en">Boxes</span></h3>
+                                <p class="portfolio-grid__text">Додаток</p>
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__item">
+                    <li class="portfolio-grid__item">
                         <a class="link" href="">
                             <img src="./img/proekt_6.jpg" alt="Веб-сайт Натхнення немає кордонів" width="370" height="294">
-                            <div class="portfolio__description">
-                                <h3 class="portfolio__title"><span lang="en">Inspiration has no Borders</span></h3>
-                                <p class="portfolio__text">Веб-сайт</p>
+                            <div class="portfolio-grid__description">
+                                <h3 class="portfolio-grid__title"><span lang="en">Inspiration has no Borders</span></h3>
+                                <p class="portfolio-grid__text">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__item">
+                    <li class="portfolio-grid__item">
                         <a class="link" href="">
                             <img src="./img/proekt_7.jpg" alt="Дизайн видання Обмежене Видання" width="370" height="294">
-                            <div class="portfolio__description">
-                                <h3 class="portfolio__title">Видання <span lang="en">Limited Edition</span></h3>
-                                <p class="portfolio__text">Дизайн</p>
+                            <div class="portfolio-grid__description">
+                                <h3 class="portfolio-grid__title">Видання <span lang="en">Limited Edition</span></h3>
+                                <p class="portfolio-grid__text">Дизайн</p>
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__item">
+                    <li class="portfolio-grid__item">
                         <a class="link" href="">
                             <img src="./img/proekt_8.jpg" alt="Маркетинг Проєкту ЛАБ" width="370" height="294">
-                            <div class="portfolio__description">
-                                <h3 class="portfolio__title">Проєкт <span lang="en">LAB</span></h3>
-                                <p class="portfolio__text">Маркетинг</p>
+                            <div class="portfolio-grid__description">
+                                <h3 class="portfolio-grid__title">Проєкт <span lang="en">LAB</span></h3>
+                                <p class="portfolio-grid__text">Маркетинг</p>
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__item">
+                    <li class="portfolio-grid__item">
                         <a class="link" href="">
                             <img src="./img/proekt_9.jpg" alt="Зростаючий Бізнес" width="370" height="294">
-                            <div class="portfolio__description">
-                                <h3 class="portfolio__title"><span lang="en">Growing Business</span></h3>
-                                <p class="portfolio__text">Додаток</p>
+                            <div class="portfolio-grid__description">
+                                <h3 class="portfolio-grid__title"><span lang="en">Growing Business</span></h3>
+                                <p class="portfolio-grid__text">Додаток</p>
                             </div>
                         </a>
                     </li>
@@ -174,46 +174,46 @@
     <footer class="page-footer">
         <div class="container">
             <div class="page-footer__links">
-                <a class="page-footer__logo logo link" href="/index.html">Web<span class="page-footer__logo--light">Studio</span></a>
+                <a class="logo footer-logo" href="/index.html">Web<span class="logo--light">Studio</span></a>
                 <address class="page-footer__address">
-                    <a class="page-footer__location link" href="https://goo.gl/maps/8FmRKtDjUqRwU7XH7" target="_blank" rel="noopener nofollow noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
-                    <ul class="ftr-contact list">
+                    <a class="page-footer__location" href="https://goo.gl/maps/8FmRKtDjUqRwU7XH7" target="_blank" rel="noopener nofollow noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
+                    <ul class="ftr-contact">
                         <li class="ftr-contact__item">
-                            <a class="ftr-contact__link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            <a class="ftr-contact__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                         </li>
                         <li class="ftr-contact__item">
-                            <a class="ftr-contact__link link" href="tel:+380961111111">+38 096 111 11 11</a>
+                            <a class="ftr-contact__link" href="tel:+380961111111">+38 096 111 11 11</a>
                         </li>
                     </ul>
                 </address>
             </div>
             <div class="ftr-soc">
                 <p class="ftr-soc__text">Приєднуйтесь</p>
-                <ul class="ftr-soc__list list">
-                    <li class="ftr-soc__item">
-                        <a href="" class="ftr-soc__link link">
-                            <svg class="ftr-soc__icon" width="20" height="20">
+                <ul class="socials">
+                    <li class="socials__item">
+                        <a href="" class="socials__link socials__link--dark">
+                            <svg class="socials__icon" width="20" height="20">
                                 <use href="./img/icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="ftr-soc__item">
-                        <a href="" class="ftr-soc__link">
-                            <svg class="ftr-soc__icon" width="20" height="20">
+                    <li class="socials__item">
+                        <a href="" class="socials__link socials__link--dark">
+                            <svg class="socials__icon" width="20" height="20">
                                 <use href="./img/icons.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="ftr-soc__item">
-                        <a href="" class="ftr-soc__link link">
-                            <svg class="ftr-soc__icon" width="20" height="20">
+                    <li class="socials__item">
+                        <a href="" class="socials__link socials__link--dark">
+                            <svg class="socials__icon" width="20" height="20">
                                 <use href="./img/icons.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="ftr-soc__item">
-                        <a href="" class="ftr-soc__link link">
-                            <svg class="ftr-soc__icon" width="20" height="20">
+                    <li class="socials__item">
+                        <a href="" class="socials__link socials__link--dark">
+                            <svg class="socials__icon" width="20" height="20">
                                 <use href="./img/icons.svg#icon-linkedin"></use>
                             </svg>
                         </a>
@@ -225,7 +225,7 @@
                 <div class="subscribe__form">
                     <label for="email"></label>
                     <input class="subscribe__input" type="email" name="mail-subscribe" id="email" placeholder="E-mail">
-                    <button class="subscribe__btn button" type="submit">Підписатися
+                    <button class="subscribe__btn" type="submit">Підписатися
                         <svg class="subscribe__icon" width="24" height="24">
                             <use href="./img/icons.svg#icon-send"></use>
                         </svg>

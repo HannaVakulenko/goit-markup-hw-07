@@ -2,11 +2,9 @@
     position: absolute;
     width: 528px;
     min-height: 581px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    @include absCenter;
     padding: 40px;
-    background-color: var(--white-logo-color);
+    background-color: getColor('white-logo-color');
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transform: translate(-50%, -50%) scale(1);
@@ -25,14 +23,12 @@
         background-color: transparent;
         border: 1px solid rgba(0, 0, 0, 0.1);
         border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flexCenter;
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     
     &__close:hover, &__close:focus {
-        fill: var(--accent-color);
+        fill: getColor('accent-color');
     }
     
     &__title {
@@ -42,7 +38,7 @@
         line-height: 1.15;
         text-align: center;
         letter-spacing: 0.03em;
-        color: var(--title-text-color);
+        color: getColor('title-text-color');
     }
     
     &__button {
@@ -51,6 +47,7 @@
         display: block;
         margin: 0 auto;
         margin-top: 30px;
+        @extend .button;
   }
   }
   
@@ -69,7 +66,7 @@
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.01em;
-        color: var(--primary-text-color);
+        color: getColor('primary-text-color');
     }
     
     &__input {
@@ -91,11 +88,11 @@
     }
     
     &__input:focus {
-        border-color: var(--accent-color);
+        border-color: getColor('accent-color');
     }
     
     &__input:focus + &__icon {
-        fill: var(--accent-color);
+        fill: getColor('accent-color');
     }
     
     &__comment {
@@ -111,7 +108,7 @@
     }
     
     &__comment:focus {
-        border-color: var(--accent-color);
+        border-color: getColor('accent-color');
     }
     
     &__comment::placeholder {
@@ -125,32 +122,28 @@
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
-        color: var(--primary-text-color);
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        color: getColor('primary-text-color');
+        @include flexCenter;
     }
     
     &__check {
         width: 16px;
         height: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexCenter;
         margin-right: 7px;
-        border: 2px solid var(--title-text-color);
+        border: 2px solid getColor('title-text-color');
         border-radius: 2px;
         fill: transparent;
     }
     
     &__checkbox:checked + &__check {
-        background-color: var(--accent-color);
+        background-color: getColor('accent-color');
         border-color: transparent;
-        fill: var(--white-logo-color);
+        fill: getColor('white-logo-color');
     }
     
     &__license {
         margin-left: 4px;
-        color: var(--accent-color);
+        color: getColor('accent-color');
     }
 }

@@ -1,24 +1,24 @@
 .features {
     padding-bottom: 0;
-    background-color: var(--white-logo-color);
+    background-color: getColor('white-logo-color');
+}
   
-    &__list {
-      display: flex;
-      gap: 30px;
-      }
+.features-list {
+    display: flex;
+    gap: 30px;
+    @extend .list;
+      
   
     &__item {
       min-width: 270px;
     }
 
     &__frame {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include flexCenter;
       margin-bottom: 30px;
       width: 270px;
       height: 120px;
-      background: var(--secondary-bgc-color);
+      background: getColor('secondary-bgc-color');
       border-radius: 4px;
     }
 
@@ -29,7 +29,7 @@
       line-height: 1.14;
       letter-spacing: 0.03em;
       text-transform: uppercase;
-      color: var(--title-text-color);
+      color: getColor('title-text-color');
     }
 
     &__text {
@@ -37,6 +37,6 @@
       line-height: 1.71;
       letter-spacing: 0.03em;
       text-align: start;
-      color: var(--primary-text-color);
+      color: getColor('primary-text-color');
     }
-    }
+}

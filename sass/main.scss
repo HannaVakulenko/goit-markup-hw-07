@@ -1,5 +1,6 @@
-@import 'utils/vars';
+@import 'utils/colors';
 @import 'utils/hidden';
+@import 'utils/mixins';
 
 @import 'base/reset';
 @import 'base/typography';
@@ -10,6 +11,7 @@
 @import 'components/container';
 @import 'components/section';
 @import 'components/text';
+@import 'components/socials';
 @import 'components/backdrop';
 @import 'components/filters';
 

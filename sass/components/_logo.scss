@@ -4,5 +4,14 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: var(--accent-color);
+    color: getColor('accent-color');
+    @extend .link;
+
+    &--light {
+      color: getColor('white-logo-color');
+    }
+
+    &--dark {
+      color: getColor('logo-color');
+    }
   }
