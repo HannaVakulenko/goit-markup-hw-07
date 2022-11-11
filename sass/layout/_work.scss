@@ -22,11 +22,8 @@
     }
 
     &__text {
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 1.14;
+      @include font (700, 14, 1.14, 0.03);
       text-align: center;
-      letter-spacing: 0.03em;
       text-transform: uppercase;
       color: getColor('white-logo-color');
     }

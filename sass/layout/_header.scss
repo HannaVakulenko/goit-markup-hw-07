@@ -18,10 +18,7 @@
       display: flex;
       padding-top: 32px;
       padding-bottom: 32px;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 1.14;
-      letter-spacing: 0.02em;
+      @include font (500, 14, 1.14, 0.02);
       @extend .link;
     }
   }
@@ -46,10 +43,7 @@
       @extend .link;
       @include flexCenterY;
       gap: 10px;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 1.14;
-      letter-spacing: 0.02em;
+      @include font (500, 14, 1.14, 0.02);
       color: getColor('primary-text-color');
       fill: getColor('primary-text-color');
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);

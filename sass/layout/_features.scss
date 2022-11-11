@@ -24,18 +24,13 @@
 
     &__title {
       margin-bottom: 10px;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 1.14;
-      letter-spacing: 0.03em;
+      @include font (700, 14, 1.14, 0.03);
       text-transform: uppercase;
       color: getColor('title-text-color');
     }
 
     &__text {
-      font-size: 14px;
-      line-height: 1.71;
-      letter-spacing: 0.03em;
+      @include font (null, 14, 1.71, 0.03);
       text-align: start;
       color: getColor('primary-text-color');
     }
